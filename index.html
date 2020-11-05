@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Website</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+    .top-navbar{
+    position: relative;
+    z-index: 10;
+}
+.top-navbar .navbar{
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    transition: height .3s ease-out, background .3s ease-out, box-shadow .3s ease-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 100;
+}
+.top-navbar .navbar-light .navbar-nav .nav-link{
+    color: #010101;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
+    background: #d4061e;
+    color: #ffffff;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
+    background: #d4061e;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    border: none;
+     box-shadow: 20px 50px 60px rgba(0,0,0,0.5);
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu a.dropdown-item:hover{
+    background: #d4061e;
+    color: #ffffff;
+}
+.navbar-light .navbar-toggler:hover{
+    background: #d4061e;
+}
+.banner-area {
+  min-height: 800px;
+  background-image: url("home-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+
+</style>    
+</head>
+<body style="background-image: url('Musicimages/Music .jpeg');">
+
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Musicimages/music.png" alt="logo1" width="75" height="75" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-buttons" aria-controls="navbars-buttons" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-buttons">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item "><a class="nav-link" href="Music-about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Music-Team.html">My Songs</a></li>                      
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="#">Contacts</a>
+                                <a class="dropdown-item" href="#">Reservations</a>
+                                <a class="dropdown-item" href="#">Concert Photos</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <iframe width="1540" height="720" src="https://www.youtube.com/embed/gBRi6aZJGj4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>   
+    <div class="carousel-item">
+    <iframe width="1540" height="720" src="https://www.youtube.com/embed/V1Pl8CzNzCw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-item">
+   <iframe width="1540" height="720" src="https://www.youtube.com/embed/BboMpayJomw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</header>
+<div class="container">
+  <h2 style="color: white; background-color: black">Billie Eilish Concerts</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="Musicimages/billie2.jpg" target="_blank">
+          <img src="Musicimages/billie2.jpg" alt="Lights" style="width:100%">
+        </a>
+        <div class="container">
+          <br>
+  <button type="button" class="btn btn-outline-danger btn-lg" data-toggle="modal" data-target="#new">New York</button>
+  <div class="modal fade" id="new" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+       <div class="container">
+  <h2>New York Form For Concert Reservation</h2>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Name">Full Name</label>
+      <div class="col-sm-10">
+        <input type="Name" class="form-control" id="Name" placeholder="Enter your full name" name="Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Email">Email</label>
+      <div class="col-sm-10">          
+        <input type="Email" class="form-control" id="Email" placeholder="Enter your Email for booking" name="Email">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+ <br>
+  <div class="alert alert-success">
+    <strong>Hurry!!</strong> Limited Seats Available 
+      </div></div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="Musicimages/billie.jpg" target="_blank">
+          <img src="Musicimages/billie.jpg" style="width:90%">
+        </a>
+        <div class="container">
+          <br>
+  <button type="button" class="btn btn-outline-danger btn-lg" data-toggle="modal" data-target="#Canada">Canada</button>
+  <div class="modal fade" id="Canada" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+  <h2>Canada Form For Concert Reservation</h2>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Name">Full Name</label>
+      <div class="col-sm-10">
+        <input type="Name" class="form-control" id="Name" placeholder="Enter you Full name" name="Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Email">Email</label>
+      <div class="col-sm-10">          
+        <input type="Email" class="form-control" id="Email" placeholder="Enter you Email for booking" name="Email">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+      </div>
+      <br>
+      <div class="alert alert-danger">
+    <strong>Hurry!!</strong> 12 hours remaining for concert. 
+      </div></div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="Musicimages/billie1.jpg" target="_blank">
+          <img src="Musicimages/billie1.jpg" alt="Fjords" style="width:100%">
+        </a>
+        <div class="container">
+          <br>
+  <button type="button" class="btn btn-outline-danger btn-lg" data-toggle="modal" data-target="London">London</button>
+  <div class="modal fade" id="London" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+       <div class="container">
+  <h2>London Form For Concert Reservation</h2>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Name">Full Name</label>
+      <div class="col-sm-10">
+        <input type="Name" class="form-control" id="name" placeholder="Enter your full name" name="name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Email">Email</label>
+      <div class="col-sm-10">          
+        <input type="email" class="form-control" id="pwd" placeholder="Enter your email for booking" name="email">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+      </div>
+            <br>
+      <div class="alert alert-info">
+    <strong>London</strong> You can Register beforehand for this concert. 
+      </div>
+    </div>
+    </div>
+<div class="container">
+    <div class="container">
+  <div class="alert alert-success alert-dismissible">
+    Our Team info In Table
+  </div>
+</div>           
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Full name</th>
+        <th>Location</th>
+        <th>Contact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>New York</td>
+        <td style="color: blue">john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Canada</td>
+        <td style="color: blue">mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>London</td>
+        <td style="color: blue">july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="container">                 
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="Music-about.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="Music-Team.html">3</a></li>
+  </ul>
+</div>
+   </body>
+    
+</html>

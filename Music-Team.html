@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Songs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+    .top-navbar{
+    position: relative;
+    z-index: 10;
+}
+
+.top-navbar .navbar{
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    transition: height .3s ease-out, background .3s ease-out, box-shadow .3s ease-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 100;
+}
+.top-navbar .navbar-light .navbar-nav .nav-link{
+    color: #010101;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
+    background: #d4061e;
+    color: #ffffff;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
+    background: #d4061e;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    border: none;
+     box-shadow: 20px 50px 60px rgba(0,0,0,0.5);
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a.dropdown-item:hover{
+    background: #d4061e;
+    color: #ffffff;
+}
+.navbar-light .navbar-toggler:hover{
+    background: #d4061e;
+}
+.banner-area {
+  min-height: 800px;
+  background-image: url("Musicimages/Team.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+
+
+</style>    
+</head>
+<body style="background-image: url('Musicimages/Music .jpeg');">
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparet">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                   <img src="Musicimages/music.png" alt="logo1" width="75" height="75" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-buttons" aria-controls="navbars-buttons" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-buttons">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item "><a class="nav-link" href="Music-about.html">About</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="Music-Team.html">My Songs</a></li>                      
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="#">Contacts</a>
+                                <a class="dropdown-item" href="#">Reservations</a>
+                                <a class="dropdown-item" href="#">Concert Photos</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="banner-area d-flex align-items-center">
+    </section>
+  
+                  <div class="container">
+  <h2>Our Experienced Doctors</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="1.jpg" target="_blank">
+          <img src="Musicimages/1.jpg" alt="Lights" style="width:80%">
+        </a>
+        <br>
+        <br>
+        <button type="button" class="btn btn-outline-danger " data-toggle="modal" data-target="#lovely">Song Information</button>
+                    <div class="modal fade" id="lovely" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+  
+<table class="table table-striped table-info table-hover table-sm">
+    <thead>
+      <tr>
+        <th>Song Name</th>
+        <th>Artist</th>
+        <th>link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lovely</td>
+        <td>Billie Eilish , Khalid</td>
+        <td style="color: blue">https://www.youtube.com/watch?v=V1Pl8CzNzCw</td>
+      </tr>
+      <tr>
+  </tr>
+</tbody>
+</table>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="Musicimages/2.jpg" target="_blank">
+          <img src="Musicimages/2.jpg" style="width:90%">
+        </a>
+        <br>
+        <br>
+          <br>   <button type="button" class="btn btn-outline-danger " data-toggle="modal" data-target="#Badguy">Song information</button><br><br>
+                    <div class="modal fade" id="Badguy" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+  
+<table class="table table-striped table-info table-hover table-sm">
+    <thead>
+      <tr>
+         <th>Song Name</th>
+        <th>Artist</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bad Guy</td>
+        <td>Billie Eilish</td>
+        <td style="color: blue">https://www.youtube.com/watch?v=4-TbQnONe_w</td>
+      </tr>
+      <tr>
+  </tr>
+</tbody>
+</table>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="Musicimages/3.jpg" target="_blank">
+          <img src="Musicimages/3.jpg" alt="Fjords" style="width:80%">
+        </a>
+        <br>
+        <br>
+     <button type="button" class="btn btn-outline-danger " data-toggle="modal" data-target="#ocean">Song information</button>
+                    <div class="modal fade" id="ocean" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+<table class="table table-striped table-info table-hover table-sm">
+    <thead>
+      <tr>
+      <th>Song Name</th>
+        <th>Artist</th>
+        <th>link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ocean Eyes</td>
+        <td>Billie Eilish</td>
+        <td><p style="color: blue">https://www.youtube.com/watch?v=hG4lT4fxj8M</p></td>
+      </tr>
+      <tr>
+  </tr>
+</tbody>
+</table>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="Musicimages/4.jpg" target="_blank">
+          <img src="Musicimages/4.jpg" alt="Fjords" style="width:80%">
+          <div class="caption">
+            
+          </div>
+        </a>
+        <br>
+     <button type="button" class="btn btn-outline-danger " data-toggle="modal" data-target="#party">Song information</button>
+     <br>
+     <br>
+                    <div class="modal fade" id="party" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+<table class="table table-striped table-info table-hover table-sm">
+    <thead>
+      <tr>
+         <th>Song Name</th>
+        <th>Artist</th>
+        <th>link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>When the party's over</td>
+        <td>Billie Eilish</td>
+        <td><p style="color: blue">https://www.youtube.com/watch?v=ZzNuwjErYlE</p></td>
+      </tr>
+      <tr>
+  </tr>
+</tbody>
+</table>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="Musicimages/5.jpg" target="_blank">
+          <img src="Musicimages/5.jpg" alt="Fjords" style="width:95%">
+          <div class="caption">
+    
+          </div>
+        </a>
+        <br>
+        
+     <button type="button" class="btn btn-outline-danger " data-toggle="modal" data-target="#Everything">Song information</button>
+     <br>
+     <br>
+                    <div class="modal fade" id="Everything" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+<table class="table table-striped table-info table-hover table-sm">
+    <thead>
+      <tr>
+         <th>Song Name</th>
+        <th>Artist</th>
+        <th>link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Everything i wanted</td>
+        <td>Billie Eilish</td>
+        <td><p style="color: blue">https://www.youtube.com/watch?v=EgBJmlPo8Xw</p></td>
+      </tr>
+      <tr>
+  </tr>
+</tbody>
+</table>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="Musicimages/6.jpg" target="_blank">
+          <img src="Musicimages/6.jpg" alt="Fjords" style="width:50%">
+        </a>
+        <br>
+        <br>
+        <br>
+     <button type="button" class="btn btn-outline-danger " data-toggle="modal" data-target="#future">Song information</button>
+     <br>
+     <br>
+                    <div class="modal fade" id="future" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+<table class="table table-striped table-info table-hover table-sm">
+    <thead>
+      <tr>
+       <th>Song Name</th>
+        <th>Artist</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>My Future</td>
+        <td>Billie Eilish</td>
+        <td><p style="color: blue">https://www.youtube.com/watch?v=Dm9Zf1WYQ_A</p></td>
+      </tr>
+      <tr>
+  </tr>
+</tbody>
+</table>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <div class="container">                 
+  <ul class="pagination">
+   <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="Music-about.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="Music-Team.html">3</a></li>
+  </ul>
+
+        
+
+   </body>
+    
+</html>
